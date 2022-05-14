@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c419bf96dc.js" crossorigin="anonymous"></script>
+    <title>João Victor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="quadrado-preto.png" height="110" width="110" alt="logo">
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Overplayed1">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto: jvejuds467@yahoo.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11959404386">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>João Victor</h1>
+                <h5>Full-Stack Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <p class="eu">Sobre Mim</p>
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    In qui duis Lorem officia deserunt ad incididunt eiusmod nulla laboris magna ut amet adipisicing.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>
+                        deixe seu contato!
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display=document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
